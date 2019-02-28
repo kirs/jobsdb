@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+go run main.go sort.go semaphore.go backend.go $1

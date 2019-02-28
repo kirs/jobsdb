@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+go generate
+
+grpc_tools_ruby_protoc -Itypes --ruby_out=ruby/lib --grpc_out=ruby/lib types/types.proto

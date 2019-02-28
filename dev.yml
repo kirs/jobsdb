@@ -1,0 +1,10 @@
+name: jobsdb
+
+type: go
+
+up:
+  - go:
+      version: '1.10'
+  - ruby:
+      version: '2.5.3'
+  - golang_dep
